@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Graph</title>
+    <style>
+        html,
+        body {
+            background: #00bcd4;
+        }
+
+        .graph_container {
+            width: 900px;
+            height: 500px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, .20);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="graph_container">
+
+    </div>
+    <script src="graph.js"></script>
+</body>
+<script>
+    var graph = new Graph("graph_container", 10);
+    var graphData = [
+        {
+            x: 2000,
+            y: 50
+        },
+        {
+            x: 2001,
+            y: 242
+        },
+        {
+            x: 2002,
+            y: 40
+        },
+        {
+            x: 2003,
+            y: 220
+        },
+        {
+            x: 2004,
+            y: 555
+        },
+        {
+            x: 2005,
+            y: 976
+        },
+        {
+            x: 2006,
+            y: 300
+        },
+        {
+            x: 2007,
+            y: 220
+        },
+        {
+            x: 2008,
+            y: 170
+        },
+        {
+            x: 2009,
+            y: 500
+        },
+        {
+            x: 2010,
+            y: 350
+        },
+        {
+            x: 2011,
+            y: 300
+        },
+        {
+            x: 2012,
+            y: 220
+        },
+        {
+            x: 2013,
+            y: 170
+        },
+        {
+            x: 2014,
+            y: 500
+        },
+        {
+            x: 2015,
+            y: 350
+        },
+        {
+            x: 2016,
+            y: 242
+        },
+        {
+            x: 2017,
+            y: 40
+        },
+        {
+            x: 2018,
+            y: 220
+        },
+        {
+            x: 2019,
+            y: 555
+        }
+    ]
+    graph.draw(graphData);
+</script>
+
+</html>
